@@ -1,0 +1,275 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    --accent-color: #2196F3;
+    --logo-black-color: #000000;
+    --logo-light-color: #ffffff;
+
+    --titel-dark-color: #212121;
+    --titel-light-color: #ffffff;
+
+    --accent-btn-collor: #2196F3;
+    --text-btn-collor: #ffffff;
+
+    --text-lite-color:#ffffff;
+    --text-dark-color: #757575;
+
+    --portfolio-btn-color: #F5F4FA;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+
+    color: var(--text-dark-color);
+
+    background-color: #ffffff;
+}
+
+
+/* ШАПКА САЙТА */
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: var(--logo-black-color);
+    
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.navigation-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--titel-dark-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--text-dark-color);
+}
+
+/* Cекция HERO */
+
+.hero-titel {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--titel-light-color);
+
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    background-color: var(--accent-btn-collor);
+    color: var(--text-btn-collor);
+}
+
+/* Секция ОСОБЕННОСТИ */
+
+.subtitel-dark {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--titel-dark-color);
+}
+
+.description {
+    letter-spacing: 0.03em;
+}
+
+
+/* Секция ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.titel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--titel-dark-color);
+}
+
+.we-do-list-titel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--titel-light-color);
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+
+/* Секция НАША КОМАНДА */
+
+.team-list-item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--titel-dark-color);
+}
+
+.team-list-item-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* Секция ПОСТОЯННЫЕ КЛИЕНТЫ */
+
+
+/* ПОДВАЛ */
+
+.footer .logo {
+    color: var(--titel-light-color);
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+.contacts-list-link-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+
+    color: var(--titel-light-color);
+
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+.contacts-list-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+.footer-titel{
+    font-weight: 700;
+    color: var(--titel-light-color);
+
+    background-color: gray;
+    /*заглушка для белого текста*/
+}
+
+/* portfolio.html */
+
+
+/* Секция ФИЛЬТР */
+
+.filter-list-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var (--titel-dark-color);
+
+    background-color: var(--portfolio-btn-color);
+}
+
+.filter-list-button:hover,
+.filter-list-button:focus{
+    color: var(--text-btn-collor);
+    background-color: var(--accent-color);
+}
+
+
+
+/* Секция ПРИМЕРЫ РОБОТ */
+
+.work-list-titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--titel-dark-color);
+}
+
+.work-list-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: var(--text-lite-color);
+}
+
+.work-list-kind {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    
+    color: var(--text-dark-color);
+}
