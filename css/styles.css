@@ -21,6 +21,8 @@
 .link {
     text-decoration: none;
     font-style: normal;
+
+    display: block;
 }
 
 .list {
@@ -37,9 +39,28 @@ body {
 
     background-color: #ffffff;
 }
+h1{
+    margin: 0;
+}
 
 
 /* ШАПКА САЙТА */
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
     font-family: var(--secondary-font);
@@ -50,11 +71,24 @@ body {
     text-decoration: none;
 
     color: var(--logo-black-color);
+
+    margin-right: 85px;
     
 }
 
 .logo-accent {
     color: var(--accent-color);
+}
+
+.navigation-list {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .navigation-list-link {
@@ -64,6 +98,9 @@ body {
     letter-spacing: 0.02em;
 
     color: var(--titel-dark-color);
+
+    padding-top: 32px;
+    padding-bottom: 32px; 
 }
 
 .navigation-list-link:hover,
@@ -73,6 +110,20 @@ body {
 .header-tel:hover,
 .header-tel:focus {
     color: var(--accent-color);
+}
+.header-address{
+    display: flex;
+    align-items: center;
+}
+
+.header-address-list{
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    
+}
+.header-mail{
+    margin-right: 30px;
 }
 
 .header-mail,
@@ -86,6 +137,18 @@ body {
 }
 
 /* Cекция HERO */
+.hero{
+    background-color: gray;
+    /* заглушка Вместо картинки */
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 .hero-titel {
     font-weight: 900;
@@ -97,8 +160,7 @@ body {
 
     color: var(--titel-light-color);
 
-    background-color: gray;
-    /*заглушка для белого текста*/
+    margin-bottom: 30px;
 }
 
 .button {
